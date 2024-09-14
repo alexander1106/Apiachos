@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Responsivo</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <!-- Opciones de encabezado -->
+      <nav>
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+        <label for="menu-toggle-checkbox" class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="cont-logo">
+            <img
+                src="/img/0d643d17-d5a2-4a39-82bb-6b86c0e8d96e-removebg-preview.png"
+                alt=""
+            />
+        </div> 
+    
+        
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">PRODUCTOS</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+      
+    
+        <div class="display-flex">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>
+                Mi carrito <br />
+                $0.00
+            </p>
+        </div> 
+    
+    </nav>
+    
+    
+      <!-- Carrusel de imágenes -->
+      <div class="contenedor-carousel">
+        <div class="cont-inner-carousel">
+          <div class="carousel-item active">
+            <img src="/img/portada2.jpeg" alt="Imagen 1" />
+          </div>
+          <div class="carousel-item active">
+            <img src="/img/portada.jpeg" alt="Imagen 1" />
+          </div>
+          <div class="carousel-item active">
+            <img src="/img/portada.jpeg" alt="Imagen 1" />
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div class="title">
+        <h1>BIENVENIDOS A <span>APIACHOS</span></h1>
+        <h4>Donde los Sabores se Viven en Cada Bocado</h4>
+      </div>
+
+    </header>
+    <main>
+      <section class="cont-tipo-productos">
+        <div class="tipo-producto">
+          <img src="/img/maduritos.jpeg" alt="" />
+          <h1>Maduritos rellenos</h1>
+        </div>
+        <div class="tipo-producto">
+          <img src="/img/refrescos.jpeg" alt="" />
+          <h1>Refrescos</h1>
+        </div>
+        <div class="tipo-producto">
+          <img src="/img/licores.jpeg" alt="" />
+          <h1>Licores</h1>
+        </div>
+      </section>
+
+      <section class="section-razones">   
+        <h2>¿Por qué <span>elegirnos</span></h2>
+        <div class="cont-razones">
+          <div class="razon">
+            <i class="fa-solid fa-ranking-star"></i>
+            <div class="cont-txt">
+               <h3>Calidad de la Comida</h3>
+              <p>
+                Disfruta de maduritos rellenos, refrescos y licores preparados con
+                ingredientes frescos y de alta calidad, garantizando un sabor
+                excepcional en cada bocado y sorbo.</div>
+           
+            </p>
+          </div>
+          <div class="razon">
+            <i class="fa-solid fa-bell-concierge"></i>
+            <h3>Ambiente y Servicio</h3>
+            <p>
+              Experimenta un ambiente acogedor y un servicio atento que hacen
+              que cada visita sea placentera. Nuestro personal se dedica a
+              ofrecerte una experiencia gastronómica única.
+            </p>
+          </div>
+          <div class="razon">
+            <i class="fa-solid fa-sheet-plastic"></i>
+            <h3>Variedad del Menú</h3>
+            <p>
+              Explora un menú variado que incluye deliciosos maduritos rellenos,
+              refrescos y licores, diseñado para satisfacer todos los gustos y
+              ocasiones.
+            </p>
+          </div>
+          <div class="razon">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Ubicación y Comodidad</h3>
+            <p>
+              Ubicados en un lugar conveniente, ofrecemos fácil acceso y
+              estacionamiento, asegurando una experiencia cómoda y sin
+              complicaciones.
+            </p>
+          </div>
+       </div>
+        </div>      
+       
+      </section>
+
+      <section class="section-productos">
+        <h1>Productos mas relevantes</h1>
+        <div class="cont-producto">
+          <div class="producto">
+            <img src="/img/licor1.jpeg" alt="" />
+            <h3>Machu Picchu</h3>
+            <p>Disponible 100u</p>
+            <p>S/15.00</p>
+            <button>Agregar<i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+          <div class="producto">
+            <img src="/img/maduro1.jpeg" alt="" />
+            <h3>Madur con queso</h3>
+            <p>Disponible 100u</p>
+            <p>S/5.00</p>
+            <button>Agregar<i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+          <div class="producto">
+            <img src="/img/cuba-libre.jpg" alt="" />
+            <h3>Cuba Libre</h3>
+            <p>Disponible 100u</p>
+            <p>S/15.00</p>
+            <button>Agregar<i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+          <div class="producto">
+            <img src="/img/box-on-the-bech.jpg" alt="" />
+            <h3>Box on the beach</h3>
+            <p>Disponible 100u</p>
+            <p>S/15.00</p>
+            <button>Agregar<i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+          <div class="producto">
+            <img src="/img/chilcano.jpg" alt="" />
+            <h3>Chilcano            </h3>
+            <p>Disponible 100u</p>
+            <p>S/15.00</p>
+            <button>Agregar<i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-servicios">
+        <h1>En <span>Apiachos</span> contamos con los siguientes servicios</h1>
+
+        <div class="cont-servicios">
+          <div class="cont-img">
+            <img src="/img/mozos.png" alt="diwdj" />
+          </div>
+          <div class="servicios">
+            <div class="servicio">
+              <i class="fa-solid fa-person" id="orange"></i>
+              <h3>Servicio de Atención al Cliente</h3>
+              <button>Mas informacion</button>
+            </div>
+            <div class="servicio">
+              <i class="fa-solid fa-martini-glass-citrus" id="black"></i>
+              <h3>Servicio de Comida y Bebida</h3>
+              <button>Mas informacion</button>
+
+            </div>
+            <div class="servicio">
+              <i class="fa-solid fa-calendar-days" id="green"></i>
+              <h3>Reservas de Mesas</h3>
+              <button>Mas informacion</button>
+
+            </div>
+            <div class="servicio  ">
+              <i class="fa-solid fa-person-chalkboard" id="brown"> </i>
+              <h3>Servicio de Delivery</h3>
+              <button>Mas informacion</button>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="maps">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.260270884544!2d-76.37959962629593!3d-6.488690063437093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ba0b8585fb4a95%3A0x31de6656076056a4!2sApiachos!5e0!3m2!1ses!2spe!4v1726332610761!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-first-part">
+        <div class="footer-cont-txt">
+          <ul>
+            <li><a href="">INICIO</a></li>
+            <li><a href="">PRODUCTOS</a></li>
+            <li><a href="">NOSOTROS</a></li>
+            <li><a href="">SERVICIOS</a></li>
+            <li><a href="">CONTACTO</a></li>
+          </ul>
+        </div>
+        <div class="informacion">
+            <p>Informacion de contacto</p>
+            <p><span>Direccion: </span>Jr. Ramón Castilla 753- Pueblo Joven,<br> Tarapoto 22200</p>
+            <p><span>Telefono: </span>920 212 641</p>
+            <p><span>Horario de atencion: </span>Lunes - Domingo</p>
+
+        </div>
+        <div class="redes">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <img src="/img/logo.webp" alt="">
+
+      </div>
+      <p class="p">2022 Apiachos. Todos los derechos reservados</p>
+
+    </footer>
+
+
+    <script
+      src="https://kit.fontawesome.com/6b6dfea185.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
