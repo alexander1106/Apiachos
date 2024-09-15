@@ -11,12 +11,13 @@ body {
 nav {
     width: 100%;
     display: flex;
-    padding: 0.6% 10%;
+    padding: 0.7% 9%;
     justify-content: space-between;
     align-items: center;
     z-index: 3;
+    overflow: hidden;
     position: fixed;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .cont-logo img {
@@ -36,7 +37,6 @@ nav ul {
     transition: transform 0.3s ease; /* Animación para el menú desplegable */
 }
 
-/* Estilos de los elementos del menú */
 nav ul li {
     list-style-type: none;    
 }
@@ -445,7 +445,6 @@ h3 {
 
 
 /*SERVICIOS*/
-/*SERVICIOS*/
 .section-servicios {
     width: 100%;
     text-align: center;
@@ -495,6 +494,7 @@ h3 {
 
 #orange {
     background-color: rgb(249, 121, 1);
+    color: rbg(249, 121, 1);
 }
 
 .servicio:nth-child(2) {
@@ -558,6 +558,13 @@ h3 {
     .servicios {
         grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
     }
+    .footer-cont-txt ul{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si es necesario */
+        justify-content: space-around; /* Distribuye los elementos uniformemente */
+        text-align: center;
+    }
 }
 
 /* Media query for small screens */
@@ -568,7 +575,12 @@ h3 {
     .cont-img img{
         height: 35vh;
     }
+  
 
+
+    .footer-cont-txt i{
+        display: inline;
+    }
     .servicio i {
         font-size: 30px; /* Adjust icon size for very small screens */
     }
@@ -582,111 +594,74 @@ h3 {
     }
 }
 
-/*SECCION DE CONTACTO*/
-.maps{
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-iframe{
-    text-transform: lowercase;
-    width:60%;
-
-    margin: auto;
-    height: 70vh;
-    padding: 3% 0%;
-}
-
+/*CSS FOOTER*/
 footer {
-    background-color: rgb(23, 23, 23);
-    padding: 2% 5%;
-    text-align: center;
-    color: gray;
-}
-
-footer img {
-    width: 25%; /* Ajustado para pantallas más pequeñas */
-    max-width: 150px; /* Tamaño máximo para evitar que el logo se vuelva demasiado grande */
-    margin-top: 10px;
-}
-
-.footer-first-part {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
-    justify-content: space-between;
-    align-items: flex-start; /* Alinea los elementos al inicio en lugar del centro */
-    gap: 20px; /* Espacio entre elementos */
-}
-
-.footer-cont-txt {
+    color: white;
     width: 100%;
+    background-color: black;
+  }
+  
+  .footer-first-part {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 3% 8% 2% 8%;
+    width: 100%;
+    margin: auto;
     text-align: center;
-}
+    background-color: #333;
 
-.footer-cont-txt ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-cont-txt ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.footer-cont-txt ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  }
+  
+  
+  .footer-cont-txt img {
+    max-width: 55%;
+    height: auto;
+  }
+  
+  .footer-cont-txt p,
+  .footer-cont-txt ul li {
+    margin: 8px 0;
     font-size: 14px;
-}
-
-.informacion {
+  }
+  
+  .footer-cont-txt p:hover,
+  .footer-cont-txt ul li a:hover {
+    color: gray;
+    cursor: pointer;
+  }
+  .footer-cont-txt h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .footer-cont-txt ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-cont-txt ul li a {
     color: white;
-    text-align: center; /* Centra el texto en pantallas más pequeñas */
-    margin: 10px 0;
-}
-
-.redes {
-    text-align: center; /* Centra los iconos en pantallas más pequeñas */
-    margin: 10px 0;
-}
-
-.redes i {
-    font-size: 30px; /* Tamaño más pequeño para pantallas más pequeñas */
-    margin: 0 10px;
-    color: white;
-}
-
-footer .p {
-    color: white;
-    margin-top: 20px;
-    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .footer-cont-txt ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1000px) {
+    .footer-first-part {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .footer-first-part {
+      grid-template-columns: 1fr;
+    }
+  }
+  .footer-seconds-part{
     text-align: center;
     padding: 10px;
-    width: 100%; /* Ajusta el ancho al 100% */
-    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .footer-first-part {
-        flex-direction: column; /* Cambia la dirección del flex a columna para pantallas más pequeñas */
-        align-items: center; /* Alinea los elementos al centro */
-    }
-
-    .footer-cont-txt ul li {
-        display: block; /* Muestra los elementos de la lista en bloque */
-        margin: 5px 0;
-    }
-
-    footer img {
-        width: 40%; /* Ajusta el tamaño del logo para pantallas más pequeñas */
-        max-width: none; /* Permite que el logo se ajuste en pantallas más pequeñas */
-    }
-
-    .redes i {
-        font-size: 24px; /* Ajusta el tamaño de los iconos para pantallas más pequeñas */
-        margin: 5px 8px;
-    }
-}
+    margin-top: 10px;
+  }
